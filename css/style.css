@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 1000vh;
+    background: linear-gradient(to right, aqua, pink);
+}
+
+nav {
+    position: sticky;
+    background: linear-gradient(to right, aqua, red);
+    width: 100%;
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    position: sticky;
+}
+
+.logo img {
+    width: 230px;
+}
+
+.nav-links {
+    position: sticky;
+    text-align: right;
+    margin-left: 80px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+    color: yellow;
+}
+
+#form-nav {
+    position: sticky;
+    width: 290px;
+    height: 40px;
+}
+
+button {
+    position: sticky;
+    height: 45px;
+    width: 40px;
+    top: 130px;
+    right: 70px;
+}
+
+button img {
+    width: 30px;
+}
+
+.information {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 700px;
+    left: 350px;
+    transform: translateY(-50%);
+}
+
+#circle {
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: grey;
+}
+
+@media(max-width:700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .main {
+        width: 700px;
+        height: 700px;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        position: sticky;
+    }
+    .logo {
+        position: sticky;
+    }
+    .logo img {
+        width: 130px;
+    }
+    .nav-links {
+        position: sticky;
+        text-align: right;
+        margin-left: 230px;
+        background: red;
+        width: 700px;
+    }
+    .nav-links ul li {
+        display: block;
+        text-align: right;
+        margin: 10px;
+    }
+    .nav-links ul li a {
+        text-align: right;
+    }
+    .information {
+        width: 700px;
+        height: 100vh;
+        top: 550px;
+    }
+}
