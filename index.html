@@ -1,50 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>    
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" , initial-scale="1" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <title> Realme</title>
-</head>
+    <body>
+        <section class="footer">
+            <nav>
+                <div class="logo">
+                    <img src="download.png", alt="logo">
+                </div>
 
-<body>
-    <div class="main">
-        <nav>
-            <div class="logo">
-                <img src="images/download-removebg-preview.png" alt="realme">
-            </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="#", target="_blank"> HOME </a> </li>
+                        <li> <a href="#", target="_blank"> ABOUT </a> </li>
+                        <li> <a href="index3.html", target="_blank"> SERVICES </a> </li>
+                        <li> <a href="#", target="_blank"> ITEMS </a> </li>
+                        <li> <a href="#", target="_blank"> DELIVERY </a> </li>
+                        <li> <a href="#", target="_blank"> CONTACT US  </a> </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars", onclick="showMenu()"></i>
+            </nav>
 
-            <i class="fa fa-times"></i>
 
-            <div class="nav-links">
-                <ul>
-                    <li> <a href="#"> Home </a> </li>
-                    <li> <a href="#"> Products </a> </li>
-                    <li> <a href="#"> Quantity </a> </li>
-                    <li> <a href="#"> About </a> </li>
-                    <li> <a href="#"> Contact Us </a> </li>
-                    <li> <a href="#"> Accessories </a> </li>
-                </ul>
-            </div>
+        </section>
 
-            <form>
-                <input type="text" placeholder="Type here to search" id="form-nav">
 
-                <button type="button"> <img src="images/search_icon-removebg-preview.png" alt="search-imf"> </button>
-            </form>
-            <i class="fa fa-bars"></i>
-        </nav>
-        <div class="information">
-            <div id="circle">
-                <div class="features one"> </div>
-                <div class="features one"> </div>
-                <div class="features one"> </div>
-                <div class="features one"> </div>
-            </div>
-        </div>
-    </div>
-</body>
+        <script>
+            var navLinks = document.getElementById('navLinks')
+            function showMenu()
 
+            {
+                navLinks.style.right = "0px";
+            }
+
+            function hideMenu()
+
+            {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
 </html>
